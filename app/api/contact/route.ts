@@ -1,8 +1,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 function escapeHtml(str: string) {
   return str
     .replace(/&/g, "&amp;")
@@ -31,13 +29,16 @@ export async function POST(req: Request) {
     }
 
     const to = process.env.CONTACT_TO_EMAIL;
+    const resendApiKey = process.env.RESEND_API_KEY;
 
-    if (!process.env.RESEND_API_KEY || !to) {
+    if (!resendApiKey || !to) {
       return NextResponse.json(
         { error: "Configuration email manquante côté serveur." },
         { status: 500 },
       );
     }
+
+    const resend = new Resend(resendApiKey);
 
     const safeFirstName = escapeHtml(firstName);
     const safeLastName = escapeHtml(lastName);
