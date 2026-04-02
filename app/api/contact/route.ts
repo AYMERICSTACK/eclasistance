@@ -181,7 +181,7 @@ export async function POST(req: Request) {
                 <strong>Téléphone :</strong> 06 17 58 38 50
               </p>
               <p style="margin:0 0 6px; font-size:15px; color:#374151;">
-                <strong>Email :</strong> eclasistance@hotmail.com
+                <strong>Email :</strong> contact@eclasistance.fr
               </p>
               <p style="margin:0; font-size:15px; color:#374151;">
                 <strong>Zone :</strong> Lent, Bourg-en-Bresse et alentours
@@ -202,7 +202,7 @@ export async function POST(req: Request) {
     const internalResult = await resend.emails.send({
       from: "Écla sistance <onboarding@resend.dev>",
       to,
-      replyTo: email,
+      replyTo: "contact@eclasistance.fr",
       subject: internalSubject,
       html: internalHtml,
     });
@@ -217,6 +217,7 @@ export async function POST(req: Request) {
     const customerResult = await resend.emails.send({
       from: "Écla sistance <onboarding@resend.dev>",
       to: email,
+      replyTo: "contact@eclasistance.fr",
       subject: customerSubject,
       html: customerHtml,
     });
