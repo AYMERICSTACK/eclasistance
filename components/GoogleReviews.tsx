@@ -3,25 +3,18 @@ import { Star, Quote, ExternalLink, PencilLine } from "lucide-react";
 import FadeIn from "./FadeIn";
 import BrandInline from "./BrandInline";
 
-const GOOGLE_RATING = "5,0";
-const GOOGLE_REVIEW_COUNT = "5 avis";
+const GOOGLE_LABEL = "Google";
+const GOOGLE_REVIEW_COUNT = "1 avis Google";
 
-const GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=Ecla+sistance+avis";
-const GOOGLE_WRITE_REVIEW_URL =
-  "https://search.google.com/local/writereview?placeid=VOTRE_PLACE_ID";
+const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/maps/place/Ecla+Sistance/@46.1153027,5.1885461,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x8a0e54cf579b12fb:0x9ca059af400bc884!2sEcla+Sistance,+4+Rue+des+Tilleuls,+01240+Lent!2m2!1d5.191121!2d46.115299!3m5!1s0x8a0e54cf579b12fb:0x9ca059af400bc884!8m2!3d46.115299!4d5.191121!16s%2Fg%2F11nb2mzw4c?hl=fr&authuser=0&entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D";
+
+const GOOGLE_WRITE_REVIEW_URL = "https://g.page/r/CYTIC0CvWaCcEBM/review";
 
 const reviews = [
   {
-    name: "Marie D.",
-    text: "Personne sérieuse et très agréable. L’intervention s’est très bien passée, je recommande sans hésiter.",
-  },
-  {
-    name: "Sophie L.",
-    text: "Service ponctuel et soigné. On sent une vraie bienveillance et une attention au détail.",
-  },
-  {
-    name: "Jean P.",
-    text: "Très bon contact dès le début. Prestation claire et professionnelle, je suis satisfait.",
+    name: "Julie L.",
+    text: "Bravo à Mme BLANCHOT, jeune, dynamique, sérieuse, efficace et très sympa. L’intervention a été rapide, le travail bien fait, et le tarif reste très correct. Nous sommes vraiment satisfaits du service.",
   },
 ];
 
@@ -57,8 +50,8 @@ export default function GoogleReviews() {
             </h2>
 
             <p className="mt-4 text-base leading-7 text-gray-600 sm:text-lg sm:leading-8">
-              Les avis Google permettent de découvrir l’expérience vécue par les
-              clients accompagnés par <BrandInline /> à Lent, Bourg-en-Bresse et
+              Découvrez les premiers retours laissés sur Google par les clients
+              accompagnés par <BrandInline /> à Lent, Bourg-en-Bresse et
               alentours.
             </p>
           </div>
@@ -69,15 +62,12 @@ export default function GoogleReviews() {
             <div className="rounded-[1.75rem] bg-gradient-to-br from-violet-600 to-pink-400 p-1 shadow-lg transition duration-300 hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl sm:rounded-[2rem]">
               <div className="rounded-[calc(1.75rem-4px)] bg-white p-6 sm:rounded-[calc(2rem-4px)] sm:p-8 md:p-10">
                 <div className="inline-flex items-center rounded-full bg-pink-100 px-4 py-2 text-sm font-semibold text-violet-700">
-                  Google
+                  {GOOGLE_LABEL}
                 </div>
 
-                <div className="mt-5 flex items-end gap-3">
+                <div className="mt-5">
                   <span className="text-4xl font-extrabold leading-none text-slate-800 sm:text-5xl">
-                    {GOOGLE_RATING}
-                  </span>
-                  <span className="pb-1 text-sm font-medium text-gray-500 sm:text-base">
-                    / 5
+                    Avis Google
                   </span>
                 </div>
 
@@ -85,17 +75,18 @@ export default function GoogleReviews() {
                   <Stars />
                 </div>
 
-                <p className="mt-4 text-sm text-gray-600">
-                  Basé sur les avis Google
+                <p className="mt-4 text-sm font-medium text-gray-700">
+                  {GOOGLE_REVIEW_COUNT}
                 </p>
 
                 <p className="mt-2 text-sm text-gray-500">
-                  Avis visibles sur Google
+                  Avis vérifié publié sur Google
                 </p>
 
                 <p className="mt-5 text-sm leading-7 text-gray-600 sm:mt-6 sm:text-base">
-                  Une note qui reflète un accompagnement humain, sérieux et
-                  attentif, avec une vraie qualité de service au quotidien.
+                  Une présence locale en cours de construction, avec déjà un
+                  premier retour client très positif sur la qualité du service,
+                  le sérieux et la réactivité.
                 </p>
 
                 <div className="mt-7 flex flex-col gap-3 sm:mt-8">
