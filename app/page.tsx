@@ -7,11 +7,12 @@ import CreditHighlight from "../components/CreditHighlight";
 import GoogleReviews from "../components/GoogleReviews";
 import FadeIn from "../components/FadeIn";
 import Image from "next/image";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Aide à domicile à Lent | Écla sistance",
+export const metadata: Metadata = {
+  title: "Aide à domicile à Lent & Bourg-en-Bresse | Écla sistance",
   description:
-    "Service d’aide à domicile à Lent et Bourg-en-Bresse. Ménage, repassage, accompagnement. Bénéficiez du crédit d’impôt immédiat à 50%.",
+    "Écla sistance propose des services d’aide à domicile à Lent, Bourg-en-Bresse et alentours : ménage, repassage, accompagnement et aide du quotidien avec 50% de crédit d’impôt immédiat.",
 };
 
 export default function Home() {
@@ -39,7 +40,7 @@ export default function Home() {
         <Contact />
       </FadeIn>
 
-      <section className="bg-grey px-6 py-16 text-center">
+      <section className="bg-gray-50 px-6 py-16 text-center">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold text-gray-900">
             Votre aide à domicile à Lent et Bourg-en-Bresse
@@ -56,15 +57,23 @@ export default function Home() {
               />
             </span>{" "}
             propose des services d’aide à domicile à Lent, Bourg-en-Bresse et
-            dans les environs. Que ce soit pour du ménage, du repassage, des
-            courses ou un accompagnement quotidien, chaque intervention est
-            réalisée avec sérieux et bienveillance.
+            dans les communes alentours. Nous accompagnons les particuliers avec
+            des prestations de ménage, repassage, courses, entretien du domicile
+            et assistance du quotidien, dans une approche humaine, sérieuse et
+            rassurante.
           </p>
 
           <p className="mt-4 leading-7 text-gray-600">
-            Grâce au crédit d’impôt immédiat, vous bénéficiez d’un reste à
-            charge réduit de 50%, ce qui rend les services à domicile plus
-            accessibles.
+            Chaque intervention est pensée pour simplifier votre quotidien et
+            vous apporter plus de confort à domicile. Que vous ayez besoin d’une
+            aide ponctuelle ou régulière, nous proposons un accompagnement
+            personnalisé à Lent et à Bourg-en-Bresse.
+          </p>
+
+          <p className="mt-4 leading-7 text-gray-600">
+            Grâce au crédit d’impôt immédiat à 50%, les services à la personne
+            deviennent plus accessibles, avec un reste à charge réduit dès la
+            facturation selon votre situation.
           </p>
         </div>
       </section>
