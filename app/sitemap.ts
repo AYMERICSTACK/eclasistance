@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.eclasistance.fr"; // ⚠️ change plus tard si besoin
+  const baseUrl = "https://www.eclasistance.fr";
 
   return [
     {
@@ -18,6 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/a-propos`,
       lastModified: new Date(),
     },
   ];

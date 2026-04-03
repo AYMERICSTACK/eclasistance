@@ -47,9 +47,9 @@ const services = [
 ];
 
 export const metadata: Metadata = {
-  title: "Services d’aide à domicile à Lent | Écla sistance",
+  title: "Aide à domicile à Lent & Bourg-en-Bresse | Écla sistance",
   description:
-    "Découvrez nos services d’aide à domicile à Lent et Bourg-en-Bresse : ménage, repassage, accompagnement et assistance.",
+    "Découvrez nos services d’aide à domicile à Lent, Bourg-en-Bresse et alentours : ménage, repassage, accompagnement, courses et assistance aux personnes âgées.",
 };
 
 export default function ServicesPage() {
@@ -66,13 +66,14 @@ export default function ServicesPage() {
               </p>
 
               <h1 className="text-4xl font-extrabold text-slate-800 sm:text-5xl">
-                Nos services d’aide à domicile à Lent
+                Services d’aide à domicile à Lent et Bourg-en-Bresse
               </h1>
 
               <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-                <BrandInline /> propose des prestations fiables, humaines et
-                adaptées à vos besoins pour particuliers et professionnels à
-                Lent, Bourg-en-Bresse et alentours.
+                <BrandInline /> propose des prestations d’aide à domicile
+                fiables, humaines et adaptées à vos besoins pour les
+                particuliers et les professionnels à Lent, Bourg-en-Bresse et
+                alentours.
               </p>
             </div>
           </FadeIn>
@@ -146,14 +147,23 @@ export default function ServicesPage() {
           </h2>
 
           <p className="mt-4 leading-7 text-gray-600">
-            <BrandInline /> propose des services à la personne à Lent et
-            Bourg-en-Bresse adaptés à chaque situation. Nos prestations incluent
-            le ménage, le repassage, l’accompagnement et les courses.
+            <BrandInline /> propose des services à la personne à Lent,
+            Bourg-en-Bresse et dans les communes alentours. Nos prestations
+            incluent le ménage, le repassage, l’accompagnement, les courses et
+            l’assistance aux personnes âgées.
           </p>
 
           <p className="mt-4 leading-7 text-gray-600">
             Chaque intervention est personnalisée afin de répondre au mieux à
-            vos attentes et d’assurer un confort optimal au quotidien.
+            vos attentes et d’assurer un confort optimal au quotidien. Notre
+            objectif est d’offrir un service d’aide à domicile sérieux, humain
+            et rassurant pour faciliter la vie de tous les jours.
+          </p>
+
+          <p className="mt-4 leading-7 text-gray-600">
+            Que vous recherchiez une aide ponctuelle ou régulière à Lent ou à
+            Bourg-en-Bresse, <BrandInline /> vous accompagne avec des solutions
+            adaptées à votre situation.
           </p>
         </section>
       </FadeIn>
