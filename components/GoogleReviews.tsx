@@ -4,7 +4,7 @@ import FadeIn from "./FadeIn";
 import BrandInline from "./BrandInline";
 
 const GOOGLE_LABEL = "Google";
-const GOOGLE_REVIEW_COUNT = "1 avis Google";
+const GOOGLE_REVIEW_COUNT = "2 avis Google";
 
 const GOOGLE_REVIEWS_URL =
   "https://www.google.com/maps/place/Ecla+Sistance/@46.1153027,5.1885461,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x8a0e54cf579b12fb:0x9ca059af400bc884!2sEcla+Sistance,+4+Rue+des+Tilleuls,+01240+Lent!2m2!1d5.191121!2d46.115299!3m5!1s0x8a0e54cf579b12fb:0x9ca059af400bc884!8m2!3d46.115299!4d5.191121!16s%2Fg%2F11nb2mzw4c?hl=fr&authuser=0&entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D";
@@ -15,6 +15,10 @@ const reviews = [
   {
     name: "Julie L.",
     text: "Bravo à Mme BLANCHOT, jeune, dynamique, sérieuse, efficace et très sympa. L’intervention a été rapide, le travail bien fait, et le tarif reste très correct. Nous sommes vraiment satisfaits du service.",
+  },
+  {
+    name: "Ahlem N.",
+    text: "J'ai fait appel à Ecla sistance pour m'aider à ranger et trier ma maison, et leur aide a été précieuse. Le personnel a été très sympathique, professionnel et discret. Je recommande vivement leurs services ! Merci à la gérante.",
   },
 ];
 
@@ -80,13 +84,13 @@ export default function GoogleReviews() {
                 </p>
 
                 <p className="mt-2 text-sm text-gray-500">
-                  Avis vérifié publié sur Google
+                  Avis vérifiés publiés sur Google
                 </p>
 
                 <p className="mt-5 text-sm leading-7 text-gray-600 sm:mt-6 sm:text-base">
-                  Une présence locale en cours de construction, avec déjà un
-                  premier retour client très positif sur la qualité du service,
-                  le sérieux et la réactivité.
+                  Une présence locale en cours de construction, avec déjà
+                  plusieurs retours clients très positifs sur la qualité du
+                  service, le sérieux et la discrétion des interventions.
                 </p>
 
                 <div className="mt-7 flex flex-col gap-3 sm:mt-8">
