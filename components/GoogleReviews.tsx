@@ -4,7 +4,7 @@ import FadeIn from "./FadeIn";
 import BrandInline from "./BrandInline";
 
 const GOOGLE_LABEL = "Google";
-const GOOGLE_REVIEW_COUNT = "2 avis Google";
+const GOOGLE_REVIEW_COUNT = "4 avis Google";
 
 const GOOGLE_REVIEWS_URL =
   "https://www.google.com/maps/place/Ecla+Sistance/@46.1153027,5.1885461,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x8a0e54cf579b12fb:0x9ca059af400bc884!2sEcla+Sistance,+4+Rue+des+Tilleuls,+01240+Lent!2m2!1d5.191121!2d46.115299!3m5!1s0x8a0e54cf579b12fb:0x9ca059af400bc884!8m2!3d46.115299!4d5.191121!16s%2Fg%2F11nb2mzw4c?hl=fr&authuser=0&entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D";
@@ -19,6 +19,14 @@ const reviews = [
   {
     name: "Ahlem N.",
     text: "J'ai fait appel à Ecla sistance pour m'aider à ranger et trier ma maison, et leur aide a été précieuse. Le personnel a été très sympathique, professionnel et discret. Je recommande vivement leurs services ! Merci à la gérante.",
+  },
+  {
+    name: "Anthony L.",
+    text: "Je recommande vraiment les yeux fermés. Travail soigné, Maude est très rigoureuse et les tarifs sont abordables. Encore merci pour son travail et son professionnalisme.",
+  },
+  {
+    name: "Virginie D.",
+    text: "Je recommande vivement Maude si vous avez besoin d’interventions à domicile. Elle est professionnelle, sympathique, et je referai appel à elle avec plaisir.",
   },
 ];
 
@@ -118,7 +126,7 @@ export default function GoogleReviews() {
             </div>
           </FadeIn>
 
-          <div className="grid gap-4 sm:gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-4 sm:gap-5 md:grid-cols-2">
             {reviews.map((review, index) => (
               <FadeIn key={review.name} delay={0.08 + index * 0.08}>
                 <article className="group flex h-full flex-col rounded-[1.75rem] bg-white p-5 shadow-sm ring-1 ring-gray-100 transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-pink-100 sm:rounded-3xl sm:p-6">

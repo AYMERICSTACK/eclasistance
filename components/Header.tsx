@@ -27,7 +27,6 @@ export default function Header() {
             className="h-16 w-auto sm:h-20 md:h-24"
           />
         </Link>
-
         <nav className="hidden gap-2 md:flex">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
