@@ -153,6 +153,68 @@ export default function CreditImpotPage() {
         </section>
       </FadeIn>
 
+      <section className="bg-white px-4 py-14 sm:px-6 sm:py-16 md:py-20">
+        <div className="mx-auto max-w-5xl">
+          <FadeIn>
+            <div className="rounded-[2rem] border border-violet-100 bg-violet-50/60 p-6 shadow-sm backdrop-blur-sm sm:p-8 md:p-10">
+              <div className="inline-flex items-center rounded-full bg-pink-100 px-4 py-2 text-sm font-semibold text-violet-700">
+                Informations importantes
+              </div>
+
+              <h2 className="mt-5 text-2xl font-bold text-slate-800 sm:text-3xl">
+                Fonctionnement de l’avance immédiate du crédit d’impôt
+              </h2>
+
+              <div className="mt-6 space-y-5 text-sm leading-7 text-gray-600 sm:text-base">
+                <p>
+                  Le service d’avance immédiate du crédit d’impôt est mis en
+                  place par l’Urssaf et la Direction générale des Finances
+                  publiques.
+                </p>
+
+                <p>
+                  Ce dispositif permet, selon votre situation, de bénéficier
+                  immédiatement de l’avance de 50% du crédit d’impôt sur les
+                  services à la personne.
+                </p>
+
+                <p>
+                  L’utilisation de ce service reste facultative et sans
+                  obligation pour le client.
+                </p>
+
+                <p>
+                  Pour bénéficier du dispositif, le client devra activer son
+                  compte sur la plateforme dédiée. Les demandes de paiement
+                  transmises par l’organisme de services à la personne devront
+                  ensuite être validées ou contestées par le client.
+                </p>
+
+                <p>
+                  En cas de question, votre interlocuteur reste <BrandInline />.
+                </p>
+
+                <div className="rounded-2xl border border-pink-100 bg-white px-5 py-4">
+                  <p className="font-medium text-slate-700">
+                    Plus d’informations sur les plafonds et conditions du crédit
+                    d’impôt :
+                  </p>
+
+                  <a
+                    href="https://www.impots.gouv.fr/portail/particulier/emploi-domicile"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-2 inline-flex text-sm font-semibold text-violet-700 underline underline-offset-4 transition hover:text-pink-500 sm:text-base"
+                  >
+                    Consulter le site officiel impots.gouv.fr
+                  </a>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       <Footer />
     </main>
   );
