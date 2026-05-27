@@ -62,7 +62,7 @@ export default function MentionsLegales() {
                   <h2 className="text-2xl font-bold text-slate-800">Contact</h2>
                   <div className="mt-5 rounded-3xl bg-gray-50 p-5">
                     <p className="leading-8 text-gray-700">
-                      Email : <strong>eclasistance@hotmail.com</strong>
+                      Email : <strong>contact@eclasistance.fr</strong>
                       <br />
                       Téléphone : <strong>06 17 58 38 50</strong>
                     </p>

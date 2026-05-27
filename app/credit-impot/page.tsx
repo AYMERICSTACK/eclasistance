@@ -179,8 +179,8 @@ export default function CreditImpotPage() {
                 </p>
 
                 <p>
-                  L’utilisation de ce service reste facultative et sans
-                  obligation pour le client.
+                  L’utilisation de ce service est totalement facultative, non
+                  obligatoire et entièrement gratuite pour le client.
                 </p>
 
                 <p>
